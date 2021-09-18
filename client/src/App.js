@@ -5,6 +5,7 @@ import Organizations from './components/Organizations';
 import Charitycauses from './components/Charitycauses';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Signup from './components/Signup';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/About" component={About} />
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/Charitycauses" component={Charitycauses}/>
+          <Route exact path="/Signup" component={Signup}/>
           </Switch>
         </main>
         <Footer></Footer>
