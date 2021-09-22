@@ -5,7 +5,8 @@ import Organizations from './components/Organizations';
 import Charitycauses from './components/Charitycauses';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import Signup from './components/Signup';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
