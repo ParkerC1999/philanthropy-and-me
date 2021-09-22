@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/ParkerC1999/philanthropy-and-me#readme",
   "dependencies": {
+    "apollo-server-express": "^3.3.0",
     "express": "^4.17.1",
+    "graphql": "^15.6.0",
     "mongoose": "^6.0.5"
   }
 }
