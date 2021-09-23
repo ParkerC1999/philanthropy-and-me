@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <Router>
-
       <div>
         <Header></Header>
         <main>
@@ -27,7 +26,6 @@ function App() {
         </main>
         <Footer></Footer>
       </div>
-
     </Router>
   );
 }
