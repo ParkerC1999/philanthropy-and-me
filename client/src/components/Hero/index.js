@@ -10,11 +10,11 @@ const Hero = () => (
     <HeroContent>
       <H1>Not for self, but for others</H1>
       <HeroP>
-        Feeling charitable? Find a cause and make a difference.
+        Feeling charitable? Reach out and make a difference.
       </HeroP>
       <HeroBtnWrapper>
-        <CalltoActionbtn to= 'charitablecauses'>
-
+        <CalltoActionbtn to='charitycauses'>
+          Find a cause
         </CalltoActionbtn>
       </HeroBtnWrapper>
 
