@@ -22,6 +22,7 @@ function App() {
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/Charitycauses" component={Charitycauses}/>
           <Route exact path="/Signup" component={Signup}/>
+          <Route exact path="/Login" component={Login}/>
           </Switch>
         </main>
         <Footer></Footer>
