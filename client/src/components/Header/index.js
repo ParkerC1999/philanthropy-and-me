@@ -1,62 +1,93 @@
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
-import { Container, DivT, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
-import {Link} from 'react-router-dom';
-const Header = () =>  (
- 
-  <Container>
-    <DivT>
-      <Link to="/">
-        <a style={{ display: 'flex', alignItems: 'center', color:"rgb(249, 250, 136)", textDecoration:"none" }}>
-           <span>Philanthropy and Me</span>
-        </a>
-      </Link>
-    </DivT>
-    {/* Tabs for the Header Menu */}
-    <Div2>
-      
-      <li>
-        <Link className ="LinksS" to="/organizations">
-          <NavLink>Organizations</NavLink>
+import React, { useState } from 'react';
+import { Button } from './Button';
+import Dropdown from './Dropdown';
+import './HeaderStyles.css';
+import { Link } from 'react-router-dom';
+
+function Header() {
+  const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
+  return (
+    <>
+      <nav className='navbar'>
+        <Link to='/' className='navbar slogan' onClick={closeMobileMenu}>
+          Philanthropy and Me
         </Link>
-      </li>
-      <li>
-        <Link className ="LinksS" to="/charity">
-          <NavLink>Charity Causes</NavLink>
-        </Link>
-      </li>  
-      <li>
-        <Link className ="LinksS" to="/sign">
-          <NavLink>Signup</NavLink>
-        </Link>
-      </li>         
-      <li>
-        <Link className ="LinksS" to="/about">
-          <NavLink>About</NavLink>
-        </Link>
-      </li>   
-      <li>
-        <Link className ="LinksS" to="/contact">
-          <NavLink>Contact</NavLink>
-        </Link>
-      </li>   
-  
-    </Div2>
-      <Div3>
-        <SocialIcons href="https://github/Scuobahia.com">
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://linkedin.com">
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://instagram.com">
-          <AiFillInstagram size="3rem"/>
-        </SocialIcons>
-        <SocialIcons href="https://facebook.com">
-          <AiFillFacebook size="3rem"/>
-        </SocialIcons>
-      </Div3>
-    </Container>
-);
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li
+            className='nav-item'
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            <Link
+              to='/Charitablecauses'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Charitable Causes
+            </Link>
+            {dropdown && <Dropdown />}
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/Organizations'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Organizations
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/Contact'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='/About'
+              className='nav-links-mobile'
+              onClick={closeMobileMenu}
+            >
+              About us
+            </Link>
+          </li>
+        </ul>
+        <Button />
+      </nav>
+    </>
+  );
+}
 
 export default Header;

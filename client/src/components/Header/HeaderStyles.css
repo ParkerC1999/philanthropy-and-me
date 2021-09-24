@@ -1,0 +1,137 @@
+  /* Top Navbar */
+  .slogan{
+    text-decoration:none;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  .navbar {
+    background:var(--fourth-color);
+    font-family: 'Bebas Neue', cursive;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: relative;
+    z-index: 9999;
+  
+  }
+  /* Mobile menu navbar  */
+  .nav-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+  }
+  /* Menu on the Navbar */
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+  /* Links */
+  .nav-links {
+    color:var(--secondary-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links:hover {
+    background-color:var(--fith-color);
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+
+  }
+  
+  /* bars on the menu (Mobile) */
+  .fa-bars {
+    color:var(--third-color);
+  }
+  /* Mobile */
+  .nav-links-mobile {
+    display: none;
+  }
+  /* Mobile */
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background:var(--fith-color);
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 1rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: var(--third-color);
+      border-radius: 0;
+    }
+    /* bars */
+    .menu-icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  /* X to close the bars on the top menu */
+    .fa-times {
+      color:var(--fith-color);
+      font-size: 1rem;
+    }
+  /* About us on mobile */
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      border-radius: 5px;
+      width: 100%;
+      background:var(--secondary-color);
+      text-decoration: none;
+      color:var(--fith-color);
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile:hover {
+      background: var(--third-color);
+      color:var(--fith-color);
+      transition: 250ms;
+    }
+  
+    button {
+      display: none;
+    }
+  }

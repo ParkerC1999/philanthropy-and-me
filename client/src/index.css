@@ -1,8 +1,9 @@
 :root {
-  --main-color: rgb(0, 0, 0);
-  --secondary-color: rgb(206, 223, 246);
-  --third-color: rgb(242, 190, 98);
-  --fourth-color:rgb(225, 53, 82);
+  --main-color: rgb(83, 152, 204);
+  --secondary-color: rgb(254, 74, 73);
+  --third-color: rgb(202, 193, 238);
+  --fourth-color:rgb(238, 248, 124);
+  --fith-color:rgb(26,45,71);
   --menu-speed: 0.75s;
 }
   body {
