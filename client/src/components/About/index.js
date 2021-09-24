@@ -6,8 +6,8 @@ import {
 } from './AboutStyles';
 
 
-const About = (lightBg, id, imgStart, topLine, lightText,
-  headline, darkText, description, buttonLabel, img, alt  ) => {
+const About = ({ lightBg, id, imgStart, topLine, lightText,
+  headline, darkText, description, buttonLabel, img, alt }) => {
   return (
     <>
       <AboutContainer lightBg={lightBg} id={id}>
@@ -17,15 +17,15 @@ const About = (lightBg, id, imgStart, topLine, lightText,
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darktext={darkText}>{description}</Subtitle>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Btn to='Hero'>{buttonLabel}</Btn>
+                  <Btn to='home'>{buttonLabel}</Btn>
                 </BtnWrap>
               </TextWrapper>
             </Box1>
             <Box2>
               <ImgWrap>
-              <Img src={img} alt={alt}/>
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Box2>
           </AboutRow>

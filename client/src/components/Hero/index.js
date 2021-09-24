@@ -12,7 +12,7 @@ const Hero = () => {
   }
 
   return (
-  <HeroContainer id="home">
+  <HeroContainer id="Main">
     <VideoBox>
       <VideoBG autoPlay loop muted src={Video} type='video/mp4' />
     </VideoBox>
