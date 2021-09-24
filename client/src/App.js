@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import { ObjOne } from './components/About/Template'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
@@ -14,15 +15,8 @@ function App() {
       <div>
         <Header></Header>
         <main>
-          <Switch>
-          <Route exact path='/' component={Hero} />
-          <Route exact path='/Organizations' component={Organizations} />
-          <Route exact path="/About" component={About} />
-          <Route exact path="/Contact" component={Contact} />
-          <Route exact path="/Charitycauses" component={Charitycauses}/>
-          <Route exact path="/Signup" component={Signup}/>
-          <Route exact path="/Login" component={Login}/>
-          </Switch>
+          <Hero></Hero>
+        <About {...ObjOne} />
         </main>
         <Footer></Footer>
       </div>
@@ -31,3 +25,13 @@ function App() {
 }
 // onclick event 
 export default App;
+
+{/* <Switch>
+<Route exact path='/' component={Hero} />
+<Route exact path="/About" component={About} />
+<Route exact path='/Organizations' component={Organizations} />
+<Route exact path="/Contact" component={Contact} />
+<Route exact path="/Charitycauses" component={Charitycauses}/>
+<Route exact path="/Signup" component={Signup}/>
+<Route exact path="/Login" component={Login}/>
+</Switch> */}
