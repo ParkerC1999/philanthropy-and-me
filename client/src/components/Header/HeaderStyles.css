@@ -12,6 +12,9 @@
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    position: relative;
+    z-index: 9999;
+  
   }
   /* Mobile menu navbar  */
   .nav-item {
@@ -42,6 +45,7 @@
     background-color:var(--fith-color);
     border-radius: 5px;
     transition: all 0.2s ease-out;
+
   }
   
   /* bars on the menu (Mobile) */
