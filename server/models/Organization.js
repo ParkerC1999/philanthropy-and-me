@@ -18,7 +18,7 @@ const organSchema = new Schema({
         type: String,
         required: true
     },
-    Category: [
+    category: [
         {
             type: Schema.Types.ObjectId,
             ref: 'Category'

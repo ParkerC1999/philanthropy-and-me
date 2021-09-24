@@ -20,8 +20,10 @@
   "homepage": "https://github.com/ParkerC1999/philanthropy-and-me#readme",
   "dependencies": {
     "apollo-server-express": "^3.3.0",
+    "bcrypt": "^5.0.1",
     "express": "^4.17.1",
     "graphql": "^15.6.0",
-    "mongoose": "^6.0.5"
+    "mongoose": "^6.0.5",
+    "stripe": "^8.176.0"
   }
 }
