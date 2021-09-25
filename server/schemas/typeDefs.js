@@ -27,11 +27,17 @@ const typeDefs = gql`
     }
 
     type Query {
-
+        me: User
+        users: [User]
+        user(username: String!): User
+        categories: [Category]
+        organizations: [Organization]
     }
 
     type Mutation {
-
+        login(email: String!, password: String!): Auth
+        addUser(username: String!, email: String!, password: String!): Auth
+        updateUser(username: String, email: String, password: String): Auth
     }
 `;
 
