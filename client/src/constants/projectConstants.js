@@ -59,7 +59,7 @@ export const organizations = [
     id: 6,
   },
   {
-    title: 'https://www.nrdc.org/',
+    title: 'Natural Resource Defense Council',
     description: "NRDC works to safeguard the earth—its people, its plants and animals, and the natural systems on which all life depends.",
     image: '/images/nrdc.jpg',
     tags: [],
