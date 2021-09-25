@@ -17,86 +17,86 @@ db.once('open', async () => {
 
     await Organization.deleteMany();
 
-    const organizations = await Organization.insertMany([
+    await Organization.insertMany([
         {
-            name: 'CARE International',
+            title: 'CARE International',
             description: 'CARE is a major international humanitarian agency delivering emergency relief and long-term international development projects. Founded in 1945, CARE is nonsectarian, impartial, and non-governmental. It is one of the largest and oldest humanitarian aid organizations focused on fighting global poverty.',
             image: 'care.jpg',
             category: categories[0].id,
             site: 'https://www.care.org/'
         },
         {
-            name: 'International Rescue Committee',
+            title: 'International Rescue Committee',
             description: 'The International Rescue Committee responds to the world’s worst humanitarian crises and helps people whose lives and livelihoods are shattered by conflict and disaster to survive, recover and gain control of their future.',
             image: 'int-rescue-committee.jpg',
             category: categories[0].id,
             site: 'https://www.rescue.org/'
         },
         {
-            name: 'American Red Cross',
+            title: 'American Red Cross',
             description: 'The American Red Cross is a non-profit humanitarian organization that provides emergency assistance, disaster relief, and disaster preparedness education in the United States.',
             image: 'american-red-cross.jpg',
             category: categories[0].id,
             site: 'https://www.redcross.org/'
         },
         {
-            name: 'The World Food Programme',
+            title: 'The World Food Programme',
             description: 'The World Food Programme is the food-assistance branch of the United Nations. It is the world\'s largest humanitarian organization, the largest one focused on hunger and food security, and the largest provider of school meals.',
             image: 'wfp.jpg',
             category: categories[0].id,
             site: 'https://www.wfpusa.org/'
         },
         {
-            name: 'Doctors Without Borders',
+            title: 'Doctors Without Borders',
             description: 'Médecins Sans Frontières, sometimes rendered in English as Doctors Without Borders, is an international humanitarian medical non-governmental organisation of French origin best known for its projects in conflict zones and in countries affected by endemic diseases.',
             image: 'doctors-without-borders-sq-new.jpg',
             category: categories[0].id,
             site: 'https://www.doctorswithoutborders.org/'
         },
         {
-            name: 'Oxfam',
+            title: 'Oxfam',
             description: 'Oxfam is a British founded confederation of 20 independent charitable organizations focusing on the alleviation of global poverty, founded in 1942 and led by Oxfam International. It is a major nonprofit group with an extensive collection of operations.',
             image: 'oxfam.jpg',
             category: categories[0].id,
             site: 'https://www.oxfamamerica.org/'
         },
         {
-            name: 'The Nature Conservancy',
+            title: 'The Nature Conservancy',
             description: 'Our mission is to conserve the lands and waters on which all life depends. To achieve this, we must boldly address the biodiversity and climate crises over the next decade.',
             image: '',
             category: categories[1].id,
             site: 'https://www.nature.org/en-us/'
         },
         {
-            name: 'Natural Resource Defense Council',
+            title: 'Natural Resource Defense Council',
             description: 'NRDC works to safeguard the earth—its people, its plants and animals, and the natural systems on which all life depends.',
             image: 'nrdc.jpg',
             category: categories[1].id,
             site: 'https://www.nrdc.org/'
         },
         {
-            name: 'World Wildlife Fund',
+            title: 'World Wildlife Fund',
             description: "Our mission is to conserve nature and reduce the most pressing threats to the diversity of life on Earth.",
             image: 'wwf.jpg',
             category: categories[1].id,
             site: 'https://www.worldwildlife.org/'
         },
         {
-            name: 'The American Society for the Prevention of Cruelty to Animals',
+            title: 'The American Society for the Prevention of Cruelty to Animals',
             description: 'The American Society for the Prevention of Cruelty to Animals is a non-profit organization dedicated to preventing cruelty to animals.',
             image: 'aspca.jpg',
             category: categories[1].id,
             site: 'https://www.aspca.org/'
         },
         {
-            name: 'Greenpeace',
+            title: 'Greenpeace',
             description: 'Greenpeace is a non-governmental environmental organisation with offices in over 55 countries and an international coordinating body in Amsterdam, the Netherlands. Greenpeace was founded in 1971 by Irving Stowe and Dorothy Stowe, Canadian and US expat environmental activists.',
             image: 'greenpeace.jpg',
             category: categories[1].id,
             site: 'https://www.greenpeace.org/usa/'
         },
         {
-            name: 'The Sierra Club',
+            title: 'The Sierra Club',
             description: 'The Sierra Club is the most enduring and influential grassroots environmental organization in the United States. We amplify the power of our 3.8 million members and supporters to defend everyone’s right to a healthy world.',
             image: 'sierra-club.jpg',
             category: categories[1].id,
@@ -105,11 +105,11 @@ db.once('open', async () => {
     ])
     console.log('organizations seeded');
 
-    await User.deleteMany();
+    // await User.deleteMany();
 
-    await User.create([
+    // await User.create([
 
-    ]);
+    // ]);
     console.log('users seeded');
 
     process.exit();
