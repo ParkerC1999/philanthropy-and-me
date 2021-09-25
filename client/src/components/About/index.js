@@ -4,12 +4,13 @@ import {
   AboutRow, Box1, Box2, ImgWrap, Img, TextWrapper,
   TopLine, Heading, Subtitle, BtnWrap, Btn
 } from './AboutStyles';
-
+import Fade from 'react-reveal/Fade';
+ 
 
 const About = ({ lightBg, id, imgStart, topLine, lightText,
   headline, darkText, description, buttonLabel, img, alt }) => {
   return (
-    <>
+    <Fade left>
       <AboutContainer lightBg={lightBg} id={id}>
         <AboutWrapper>
           <AboutRow imgStart={imgStart}>
@@ -31,7 +32,7 @@ const About = ({ lightBg, id, imgStart, topLine, lightText,
           </AboutRow>
         </AboutWrapper>
       </AboutContainer>
-    </>
+    </Fade>
   )
 };
 

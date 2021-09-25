@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Footer from '../components/Footer';
 import { homeObjOne } from '../components/About/template';
+import Organizations from '../components/Organizations';
 
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
       <Header toggle={toggle} />
       <Hero />
       <About {...homeObjOne} />
-    
+      <Organizations></Organizations>
       <Footer />
     </>
   );
