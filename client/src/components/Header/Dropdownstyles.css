@@ -1,6 +1,6 @@
 .dropdown-menu {
     background:var(--fith-color);
-    width: 200px;
+    width: 270px;
     position: absolute;
     font-family: 'Special Elite', cursive;
     top: 55px;
@@ -29,7 +29,7 @@
     text-decoration: none;
     letter-spacing: 3px;
     color:var(--main-color);
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 16px;
   }
   

@@ -42,6 +42,24 @@ function Header() {
               Home
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link
+              to='/About'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              About
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/Organizations'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Organizations
+            </Link>
+          </li>
           <li
             className='nav-item'
             onMouseEnter={onMouseEnter}
@@ -58,29 +76,11 @@ function Header() {
           </li>
           <li className='nav-item'>
             <Link
-              to='/Organizations'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Organizations
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link
               to='/Contact'
               className='nav-links'
               onClick={closeMobileMenu}
             >
               Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='/About'
-              className='nav-links-mobile'
-              onClick={closeMobileMenu}
-            >
-              About us
             </Link>
           </li>
         </ul>

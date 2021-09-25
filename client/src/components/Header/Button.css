@@ -4,7 +4,7 @@
     font-family: 'Special Elite', cursive;
     outline: none;
     border: none;
-    font-size: 18px;
+    font-size: 2rem;
     color:var(--fith-color);
     cursor: pointer;
     background-color: var(--secondary-color);
