@@ -5,7 +5,7 @@ import {
   TopLine, Heading, Subtitle, BtnWrap, Btn
 } from './AboutStyles';
 import Fade from 'react-reveal/Fade';
- 
+
 
 const About = ({ lightBg, id, imgStart, topLine, lightText,
   headline, darkText, description, buttonLabel, img, alt }) => {

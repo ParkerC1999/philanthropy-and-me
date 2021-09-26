@@ -31,7 +31,7 @@ function Header() {
   return (
     <>
       <nav className='navbar'>
-        <Link to='/' className='navbar slogan' onClick={closeMobileMenu}>
+        <Link to='/' className='slogan' onClick={closeMobileMenu}>
           Philanthropy and Me
         </Link>
         <div className='menu-icon' onClick={handleClick}>
