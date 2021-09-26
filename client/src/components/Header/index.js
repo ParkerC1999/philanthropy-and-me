@@ -43,11 +43,6 @@ function Header() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/About" className="nav-links" onClick={closeMobileMenu}>
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link
               to="/Organizations"
               className="nav-links"
@@ -62,7 +57,7 @@ function Header() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to="/Charitablecauses"
+              to="/Charitycauses"
               className="nav-links"
               onClick={closeMobileMenu}
             >
