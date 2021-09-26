@@ -15,6 +15,8 @@ import {
   Btn,
 } from "./AboutStyles";
 import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
 const About = ({
   lightBg,
@@ -30,18 +32,26 @@ const About = ({
   alt,
 }) => {
   return (
-    <Fade left>
+    <>
       <AboutContainer lightBg={lightBg} id={id}>
         <AboutWrapper>
           <AboutRow imgStart={imgStart}>
             <Box1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
+                <Fade left>
+                  <TopLine>{topLine}</TopLine>
+                </Fade>
+
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <Btn to="home">{buttonLabel}</Btn>
-                </BtnWrap>
+                <Fade bottom>
+                  <Subtitle darkText={darkText}>{description}</Subtitle>
+                </Fade>
+
+                <Fade right>
+                  <BtnWrap>
+                    <Btn to="home">{buttonLabel}</Btn>
+                  </BtnWrap>
+                </Fade>
               </TextWrapper>
             </Box1>
             <Box2>
@@ -52,7 +62,7 @@ const About = ({
           </AboutRow>
         </AboutWrapper>
       </AboutContainer>
-    </Fade>
+    </>
   );
 };
 

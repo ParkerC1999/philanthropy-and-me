@@ -20,7 +20,7 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   topLine: "Not sure where to start?",
-  headline: "Browse through undreds of different charitable causes",
+  headline: "Browse through hundreds of different charitable causes",
   description:
     "We have you covered no matter where you are located. All you need is an internet connection and a phone or computer.",
   buttonLabel: " Look for a cause ",
