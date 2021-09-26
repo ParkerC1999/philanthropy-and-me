@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Footer from '../components/Footer';
-import { homeObjOne } from '../components/About/template';
+import { homeObjOne, homeObjTwo, homeObjThree } from '../components/About/template';
 import Organizations from '../components/Organizations';
 
 
@@ -18,6 +18,8 @@ function Home() {
       <Header toggle={toggle} />
       <Hero />
       <About {...homeObjOne} />
+      <About {...homeObjTwo}/>
+      <About {...homeObjThree}/>
       <Organizations></Organizations>
       <Footer />
     </>
