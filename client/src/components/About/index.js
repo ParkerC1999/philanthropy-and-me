@@ -49,7 +49,7 @@ const About = ({
 
                 <Fade right>
                   <BtnWrap>
-                    <Btn to="home">{buttonLabel}</Btn>
+                    <Btn to="">{buttonLabel}</Btn>
                   </BtnWrap>
                 </Fade>
               </TextWrapper>

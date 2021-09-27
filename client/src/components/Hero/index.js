@@ -10,9 +10,11 @@ import {
   Wrapper,
   Button,
   ArrowForward,
-  ArrowRigth,
+  ArrowRigth, 
+  
 } from "./HeroStyles";
 import Video from "../../videos/video.mp4";
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -32,12 +34,10 @@ const Hero = () => {
         </H1>
         <HeroP>Feeling charitable? Reach out and make a difference.</HeroP>
         <Wrapper>
-          <Button
-            to="Charitycauses"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
+          <Button onMouseEnter={onHover} onMouseLeave={onHover}>
+            <Link to="Charitycauses" style={{ display: 'flex', alignItems: 'center', color:"rgb(249, 250, 136)", textDecoration:"none" }}>
             Find a cause {hover ? <ArrowForward /> : <ArrowRigth />}
+            </Link>
           </Button>
         </Wrapper>
       </HeroContent>

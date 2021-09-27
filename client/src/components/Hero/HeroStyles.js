@@ -107,6 +107,7 @@ letter-spacing: 3px;
 align-items: center;
 transition: all 0.4s ease-in-out;
 
+
 &:hover {
     transition: all 0.4s ease-in-out;
     background: ${({primary}) => (primary ? '#fff' : 'rgb(26,45,71)')};

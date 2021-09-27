@@ -24,9 +24,8 @@ function Home() {
       <About {...homeObjOne} />
       <About {...homeObjTwo} />
       <About {...homeObjThree} />
-      <Organizations></Organizations>
-      <Charitycauses></Charitycauses>
-      <Footer />
+  
+     
     </>
   );
 }

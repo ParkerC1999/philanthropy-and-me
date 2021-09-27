@@ -1,12 +1,12 @@
 export const homeObjOne = {
-  id: "about",
+  id: "Signup",
   lightBg: false,
   lightText: false,
   lightTextDesc: true,
   topLine: "Charity never faileth",
   headline: "Make a world of difference by helping others",
   description: "Sign up and never miss a way to help out",
-  buttonLabel: "Sing Up",
+  buttonLabel: "Sign Up",
   imgStart: true,
   img: require("../../images/svg1.svg").default,
   alt: "Hearts",
@@ -15,7 +15,7 @@ export const homeObjOne = {
   darkText: true,
 };
 export const homeObjTwo = {
-  id: "about1",
+  id: "Charitycauses",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -26,14 +26,14 @@ export const homeObjTwo = {
   buttonLabel: " Look for a cause ",
   imgStart: false,
   img: require("../../images/svg2.svg").default,
-  alt: "Piggybank",
+  alt: "Two people",
   dark: false,
   primary: false,
   darkText: true,
 };
 
 export const homeObjThree = {
-  id: "about2",
+  id: "Contact",
   lightBg: false,
   lightText: false,
   lightTextDesc: false,
@@ -44,7 +44,7 @@ export const homeObjThree = {
   buttonLabel: "Start Now",
   imgStart: true,
   img: require("../../images/svg3.svg").default,
-  alt: "Papers",
+  alt: "Guy on phone sending a message",
   dark: false,
   primary: false,
   darkText: true,
