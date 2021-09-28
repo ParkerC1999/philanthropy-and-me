@@ -31,11 +31,8 @@ Instructions for use as listed in above in the description. Compare with associa
 * Clayton Andersen: https://github.com/Clayton-Andersen 
 * Parker Christiansen: https://github.com/ParkerC1999
 
-## License
-MIT
-
 ## Github Repo
-Scuobahia/rate-my-rental
+https://github.com/ParkerC1999/philanthropy-and-me
 
 ## Contributor Email Addresses
 * J. Antonio Sanchez: Scuobahia1@gmail.com 
@@ -44,4 +41,6 @@ Scuobahia/rate-my-rental
 * Parker Christiansen: parkman.christiansen@gmail.com
 
 
+## License
+MIT
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
