@@ -33,6 +33,9 @@ const typeDefs = gql`
     type Mutation {
 
     }
+    type Donation {
+        session: ID
+      }
 `;
 
 module.exports = typeDefs;
