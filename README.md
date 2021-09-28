@@ -42,5 +42,4 @@ https://github.com/ParkerC1999/philanthropy-and-me
 
 
 ## License
-MIT
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
