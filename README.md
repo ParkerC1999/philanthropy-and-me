@@ -1,7 +1,7 @@
 # philanthropy-and-me
 
 ## Description
-Philanthropy-and-me provides generous philanthropists and donors a platform to discover non-profit charitable organizations from a selection of category types. In a few simple clicks, users can narrow down to a selection of a few of the highest impact/largest organizations in a respective field. The page displays a quick blurb about the organization, a link to their website and a "donate now" button where logged in users can make secure contributions right from philanthropy and me.
+Philanthropy-and-me provides generous philanthropists and donors a platform to discover non-profit charitable organizations from a selection of category types. In a few simple clicks, users can narrow down to a selection of a few of the highest impact/largest organizations in a respective field. The page displays a quick blurb about the organization, a link to their website and a "donate now" button where logged in users can make secure contributions right from philanthropy and me. The application's components use a global state to ensure scalability to potentially include additional categories and thousands of registered non-profits or 501(c)(3).
 
 ## Table of Contents
 * [Installation](#installation)
