@@ -32,11 +32,8 @@ const typeDefs = gql`
     }
 
     type Query {
-        me: User
-        users: [User]
-        user(username: String!): User
+        donate(organizations: [ID]!): Donate
         categories: [Category]
-        organizations: [Organization]
     }
 
     type Mutation {
@@ -45,6 +42,9 @@ const typeDefs = gql`
         updateUser(username: String, email: String, password: String): Auth
         addFavorite(organizations: [ID]!): Favorite
     }
+    type Donate {
+        session: ID
+      }
 `;
 
 module.exports = typeDefs;

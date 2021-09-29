@@ -1,41 +1,76 @@
-import React from 'react';
-import {H1} from './SignupStyles';
-import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useMutation } from '@apollo/client';
+import auth from '../../utils/auth';
+import { ADD_USER } from '../../utils/mutations';
 
-const Signup = () => {
+function Signup(props) {
+  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [addUser] = useMutation(ADD_USER);
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const mutationResponse = await addUser({
+      variables: {
+        email: formState.email,
+        password: formState.password,
+        username: formState.username
+      },
+    });
+    const token = mutationResponse.data.addUser.token;
+    auth.signup(token);
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
+
   return (
-    <ParallaxProvider>
-      <Parallax y={[-20, 20]}>
-        <H1>Hey!</H1>
-      </Parallax>
+    <div className="container my-1">
+      <Link to="/login">Login</Link>
 
-      <Parallax
-        y={[-100, 100]}
-        styleInner={{
-          backgroundColor: "#ff6d6d",
-          width: "100%",
-          height: "1000px",
-          display: "block",
-        }}
-      />
-
-      <Parallax y={[-300, 100]} x={[0, 200]}>
-        
-      </Parallax>
-
-      <Parallax
-        y={[-400, 400]}
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "white",
-        }}
-      >
-        <p>Bye</p>
-      </Parallax>
-    </ParallaxProvider>
+      <h2>Signup</h2>
+      <form onSubmit={handleFormSubmit}>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="username">First Name:</label>
+          <input
+            placeholder="Username"
+            name="username"
+            type="username"
+            id="username"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="email">Email:</label>
+          <input
+            placeholder="youremail@email.com"
+            name="email"
+            type="email"
+            id="email"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="pwd">Password:</label>
+          <input
+            placeholder="******"
+            name="password"
+            type="password"
+            id="pwd"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row flex-end">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   );
-};
+}
 
 export default Signup;

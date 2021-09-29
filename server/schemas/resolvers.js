@@ -1,7 +1,7 @@
 const { User, Category, Organization, Favorite } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
-// const stripe = require('stripe');
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 const resolvers = {
     Query: {
@@ -26,8 +26,8 @@ const resolvers = {
         categories: async () => {
             return await Category.find();
         },
-        organizations: async () => {
-            return await Organization.find();
+        donate: async () => {
+            
         }
     },
     Mutation: {
