@@ -1,12 +1,33 @@
 const { User, Category, Organization } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
-const stripe = require('stripe');
+// const stripe = require('stripe');
 
 const resolvers = {
     Query: {
+        me: async (parent, args, context) => {
+            if (context.user) {
+                const userData = await User.findOne({ _id: context.user._id })
+                    .select('-__v -password')
+
+                return userData;
+            }
+
+            throw new AuthenticationError('Not logged in');
+        },
+        users: async () => {
+            return User.find()
+                .select('-__v -password');
+        },
+        user: async (parent, { username }) => {
+            return User.findOne({ username })
+                .select('-__v -password');
+        },
         categories: async () => {
             return await Category.find();
+        },
+        organizations: async () => {
+            return await Organization.find();
         }
     },
     Mutation: {
@@ -18,11 +39,11 @@ const resolvers = {
         },
         updateUser: async (parent, args, context) => {
             if (context.user) {
-              return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+                return await User.findByIdAndUpdate(context.user._id, args, { new: true });
             }
-      
+
             throw new AuthenticationError('Not logged in');
-          },
+        },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
 
