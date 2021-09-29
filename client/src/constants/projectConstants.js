@@ -59,7 +59,7 @@ export const organizations = [
     title: "The Nature Conservancy",
     description:
       "Our mission is to conserve the lands and waters on which all life depends. To achieve this, we must boldly address the biodiversity and climate crises over the next decade.",
-    image: "/images/nature-conservancy.jpg",
+    image: "/images/nature-conservancy.png",
     tags: [],
     site: "https://www.nature.org/en-us/",
     id: 6,

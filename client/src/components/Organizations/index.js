@@ -38,7 +38,9 @@ const Organizations = () => (
             </div>
             <UtilityList>
               <ExternalLinks href={p.site}>Visit</ExternalLinks>
+              <ExternalLinks href={p.donate}>Donate Now</ExternalLinks>
             </UtilityList>
+            
           </BlogCard>
         );
       })}
