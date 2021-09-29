@@ -27,11 +27,8 @@ const typeDefs = gql`
     }
 
     type Query {
-        me: User
-        users: [User]
-        user(username: String!): User
+        donate(organizations: [ID]!): Donate
         categories: [Category]
-        organizations: [Organization]
     }
 
     type Mutation {
@@ -39,7 +36,7 @@ const typeDefs = gql`
         addUser(username: String!, email: String!, password: String!): Auth
         updateUser(username: String, email: String, password: String): Auth
     }
-    type Donation {
+    type Donate {
         session: ID
       }
 `;
