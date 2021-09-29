@@ -1,4 +1,4 @@
-const { User, Category, Organization } = require('../models');
+const { User, Category, Organization, Favorite } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 // const stripe = require('stripe');
@@ -40,6 +40,18 @@ const resolvers = {
         updateUser: async (parent, args, context) => {
             if (context.user) {
                 return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+            }
+
+            throw new AuthenticationError('Not logged in');
+        },
+        addFavorite: async (parent, { organizations }, context) => {
+            console.log(context);
+            if (context.user) {
+                const favorite = new Favorite({ organizations });
+
+                await User.findByIdAndUpdate(context.user._id, { $push: { favorites: favorite } });
+
+                return favorite;
             }
 
             throw new AuthenticationError('Not logged in');

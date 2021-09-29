@@ -21,6 +21,11 @@ const typeDefs = gql`
         email: String
     }
 
+    type Favorites {
+        _id: ID
+        organizations: [Organization]
+    }
+
     type Auth {
         token: ID
         user: User
@@ -38,6 +43,7 @@ const typeDefs = gql`
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
         updateUser(username: String, email: String, password: String): Auth
+        addFavorite(organizations: [ID]!): Favorite
     }
 `;
 

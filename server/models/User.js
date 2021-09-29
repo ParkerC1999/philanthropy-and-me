@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
 
+const Favorite = require('./Favorite');
+
 const userSchema = new Schema({
     username: {
         type: String,
@@ -18,7 +20,8 @@ const userSchema = new Schema({
         type: String,
         required: true,
         minlength: 10
-    }
+    },
+    favorites: [Favorite.schema]
 })
 
 // Put in middelware!
