@@ -1,40 +1,39 @@
 .dropdown-menu {
-    background:var(--fith-color);
-    width: 200px;
-    position: absolute;
-    font-family: 'Special Elite', cursive;
-    top: 55px;
-    list-style: none;
-    text-align: start;
-    
-  }
-  
-  .dropdown-menu li {
-    background: var(--third-color);
-    cursor: pointer;
-  }
-  
-  .dropdown-menu li:hover {
-    background:var(--fith-color);
-  }
-  
-  .dropdown-menu.clicked {
+  background: var(--fith-color);
+  width: 270px;
+  position: absolute;
+  font-family: "Special Elite", cursive;
+  top: 55px;
+  list-style: none;
+  text-align: start;
+}
+
+.dropdown-menu li {
+  background: var(--third-color);
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: var(--fith-color);
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: var(--main-color);
+  font-size: 1.5rem;
+  padding: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  .fa-caret-down {
     display: none;
   }
-  
-  .dropdown-link {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    letter-spacing: 3px;
-    color:var(--main-color);
-    font-size: 1rem;
-    padding: 16px;
-  }
-  
-  @media screen and (max-width: 960px) {
-    .fa-caret-down {
-      display: none;
-    }
-  }
+}

@@ -7,7 +7,7 @@ display:flex;
 justify-content:center;
 align-items: center;
 padding: 0 30px;
-height: 700px;
+height: 1350px;
 position: relative;
 `
 // Container of the video on the hero section
@@ -35,14 +35,14 @@ z-index: 3;
 max-width: 1200px;
 position: absolute;
 padding: 8px 24 px;
-display: flex,
+display: flex;
 flex-direction: column;
 align-items: center;
 `
 // Not for self....
 export const H1 = styled.h1`
 color: var(--fith-color);
-font-size: 3rem;
+font-size: 5rem;
 margin-bottom:50px;
 text-align: center;
 font-family:'Special Elite', cursive;
@@ -61,10 +61,13 @@ color:val(--secondary-color);
 export const HeroP = styled.p`
 margin-bottom: 270px;
 color: var(--fith-color);
-font-size: 2rem;
+font-size: 2.5rem;
 font-family: 'Bebas Neue', cursive;
-text-align: center;
-max-width:700px;
+text-align:center;
+display: flex;
+align-items: center;
+justify-content: center;
+max-width:800px;
 @media screen and (max-width: 768px) {
     font-size: 24px;
 }
@@ -76,7 +79,7 @@ export const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-bottom: 100px; 
+margin-bottom: 70px; 
 font-family:'Special Elite', cursive;
 `
 export const ArrowForward = styled(MdArrowForward)`
@@ -94,7 +97,7 @@ background: ${({primary}) => (primary ? 'rgb(83, 152, 204)' : 'rgb(254, 74, 73)'
 white-space:nonwrap;
 padding: ${({big}) => (big ? '14px 78px' : '12px 30px')};
 color: ${({dark}) => (dark ? '#010606' : 'rgb(238, 248, 124)')};
-font-size ${({fontBig}) => (fontBig ? '20px' : '16px')};
+font-size: ${({fontBig}) => (fontBig ? '30px' : '26px')};
 outline: none;
 border: none;
 cursor: pointer;
@@ -103,6 +106,7 @@ justify-content: center;
 letter-spacing: 3px;
 align-items: center;
 transition: all 0.4s ease-in-out;
+
 
 &:hover {
     transition: all 0.4s ease-in-out;
