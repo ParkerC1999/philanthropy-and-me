@@ -7,6 +7,7 @@ export const homeObjOne = {
   headline: "Make a world of difference by helping others",
   description: "Sign up and never miss a way to help out",
   buttonLabel: "Sign Up",
+  destination:"/Signup",
   imgStart: true,
   img: require("../../images/svg1.svg").default,
   alt: "Hearts",
@@ -24,6 +25,7 @@ export const homeObjTwo = {
   description:
     "We have you covered no matter where you are located. All you need is an internet connection and a phone or computer.",
   buttonLabel: " Look for a cause ",
+  destination:"/Charitycauses",
   imgStart: false,
   img: require("../../images/svg2.svg").default,
   alt: "Two people",
@@ -40,8 +42,9 @@ export const homeObjThree = {
   topLine: "Did we miss something?",
   headline: "Please reach out and let us know!",
   description:
-    "Help us grow of database of trustworthy organizations. All you need to do is send us a detail message and our team will reach out.",
+    "Help us grow our database of trustworthy organizations. All you need to do is send us a detail message and our team will reach out.",
   buttonLabel: "Start Now",
+  destination:"/Contact",
   imgStart: true,
   img: require("../../images/svg3.svg").default,
   alt: "Guy on phone sending a message",

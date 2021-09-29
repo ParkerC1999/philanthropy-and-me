@@ -10,10 +10,9 @@ export const organizations = [
     id: 0,
   },
   {
-    title: "International Rescue Committee",
-    description:
-      "The International Rescue Committee responds to the world’s worst humanitarian crises and helps people whose lives and livelihoods are shattered by conflict and disaster to survive, recover and gain control of their future.",
-    image: "/images/int-rescue-committee.jpg",
+    title: 'International Rescue Committee',
+    description: "The International Rescue Committee responds to the world’s worst humanitarian crises and helps people whose lives and livelihoods are shattered by conflict and disaster to survive, recover and gain control of their future.",
+    image: '/images/int-rescue-committee.png',
     tags: [],
     site: "https://www.rescue.org/",
     id: 1,
@@ -28,10 +27,9 @@ export const organizations = [
     id: 2,
   },
   {
-    title: "The World Food Programme",
-    description:
-      "The World Food Programme is the food-assistance branch of the United Nations. It is the world's largest humanitarian organization, the largest one focused on hunger and food security, and the largest provider of school meals.",
-    image: "/images/wfp.jpg",
+    title: 'The World Food Programme',
+    description: "The World Food Programme is the food-assistance branch of the United Nations. It is the world's largest humanitarian organization, the largest one focused on hunger and food security, and the largest provider of school meals.",
+    image: '/images/wfp.png',
     tags: [],
     site: "https://www.wfpusa.org/",
     id: 3,
@@ -56,10 +54,9 @@ export const organizations = [
   },
   // Nature/Wildlife
   {
-    title: "The Nature Conservancy",
-    description:
-      "Our mission is to conserve the lands and waters on which all life depends. To achieve this, we must boldly address the biodiversity and climate crises over the next decade.",
-    image: "/images/nature-conservancy.png",
+    title: 'The Nature Conservancy',
+    description: "Our mission is to conserve the lands and waters on which all life depends. To achieve this, we must boldly address the biodiversity and climate crises over the next decade.",
+    image: '/images/nature-conservancy.png',
     tags: [],
     site: "https://www.nature.org/en-us/",
     id: 6,

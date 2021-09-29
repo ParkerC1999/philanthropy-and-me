@@ -73,7 +73,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 2rem;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   font-family: "Special Elite", cursive;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "rgb(26,45,71)" : "rgb(26,45,71")};

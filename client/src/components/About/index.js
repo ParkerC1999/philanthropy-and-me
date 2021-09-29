@@ -15,6 +15,7 @@ import {
   Btn,
 } from "./AboutStyles";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
 import Bounce from "react-reveal/Bounce";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
@@ -30,6 +31,7 @@ const About = ({
   buttonLabel,
   img,
   alt,
+  destination
 }) => {
   return (
     <>
@@ -49,7 +51,13 @@ const About = ({
 
                 <Fade right>
                   <BtnWrap>
-                    <Btn to="">{buttonLabel}</Btn>
+                    
+                    <Btn>
+                      <Link to={destination} style={{ display: 'flex', alignItems: 'center', color:"rgb(249, 250, 136)", textDecoration:"none" }}>
+                      {buttonLabel}
+                      </Link>
+                    </Btn>
+    
                   </BtnWrap>
                 </Fade>
               </TextWrapper>
