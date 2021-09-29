@@ -17,6 +17,9 @@ export const QUERY_ORGANIZATIONS = gql`
       title
       description
       site
+      category {
+        name
+      }
     }
   }
 `;
