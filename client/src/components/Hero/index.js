@@ -35,7 +35,7 @@ const Hero = () => {
         <HeroP>Feeling charitable? Reach out and make a difference.</HeroP>
         <Wrapper>
           <Button onMouseEnter={onHover} onMouseLeave={onHover}>
-            <Link to="Charitycauses" style={{ display: 'flex', alignItems: 'center', color:"rgb(249, 250, 136)", textDecoration:"none" }}>
+            <Link to="Organizations" style={{ display: 'flex', alignItems: 'center', color:"rgb(249, 250, 136)", textDecoration:"none" }}>
             Find a cause {hover ? <ArrowForward /> : <ArrowRigth />}
             </Link>
           </Button>
