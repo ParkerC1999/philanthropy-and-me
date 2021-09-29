@@ -21,13 +21,12 @@ export const QUERY_ORGANIZATIONS = gql`
   }
 `;
 
-// export const QUERY_USER = gql`
-//   {
-//     user {
-//       firstName
-
-//         }
-//       }
-//     }
-//   }
-// `;
+export const QUERY_USER = gql`
+  {
+    user {
+      username
+      email
+      password
+    }
+   }
+`;
