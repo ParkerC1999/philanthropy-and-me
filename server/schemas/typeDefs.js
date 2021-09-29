@@ -27,13 +27,14 @@ const typeDefs = gql`
     }
 
     type Query {
-
+        donate(organizations: [ID]!): Donate
+        categories: [Category]
     }
 
     type Mutation {
 
     }
-    type Donation {
+    type Donate {
         session: ID
       }
 `;
