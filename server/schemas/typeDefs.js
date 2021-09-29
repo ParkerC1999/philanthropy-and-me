@@ -39,6 +39,9 @@ const typeDefs = gql`
         addUser(username: String!, email: String!, password: String!): Auth
         updateUser(username: String, email: String, password: String): Auth
     }
+    type Donation {
+        session: ID
+      }
 `;
 
 module.exports = typeDefs;
