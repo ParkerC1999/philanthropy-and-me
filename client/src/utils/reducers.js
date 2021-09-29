@@ -15,12 +15,12 @@ export const reducer = (state, action) => {
         case ADD_TO_FAVORITES:
             return {
                 ...state,
-                favorites: [...action.favorites],
+                favorites: [...state.favorites, action.favorites],
             };
         case REMOVE_FROM_FAVORITES:
             return {
                 ...state,
-                favorites: [...action.favorites],
+                favorites: [...state.favorites, action.favorites],
             }
         default:
             return state;
