@@ -19,12 +19,12 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true,
-        minlength: 10
+        minlength: 6
     },
     favorites: [Favorite.schema]
 })
 
-// Put in middelware!
+// middelware
 userSchema.pre('save', async function (next) {
     if (this.isNew || this.isModified('password')) {
         const saltRounds = 10;

@@ -19,9 +19,10 @@ const typeDefs = gql`
         _id: ID
         username: String
         email: String
+        favorites: [Favorite]
     }
 
-    type Favorites {
+    type Favorite {
         _id: ID
         organizations: [Organization]
     }
@@ -32,8 +33,14 @@ const typeDefs = gql`
     }
 
     type Query {
+        me: User
+        users: [User]
+        user(username: String!): User
         donate(organizations: [ID]!): Donate
         categories: [Category]
+        favorite(_id: ID!): Favorite
+        organizations(category: ID, name: String): [Organization]
+        organization(_id: ID!): Organization
     }
 
     type Mutation {

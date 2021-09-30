@@ -26,8 +26,26 @@ const resolvers = {
         categories: async () => {
             return await Category.find();
         },
+        organizations: async (parent, { category, name }) => {
+            const params = {};
+
+            if (category) {
+                params.category = category;
+            }
+
+            if (name) {
+                params.name = {
+                    $regex: name
+                };
+            }
+
+            return await Organization.find(params).populate('category');
+        },
+        organization: async (parent, { _id }) => {
+            return await Organization.findById(_id).populate('category');
+        },
         donate: async () => {
-            
+
         }
     },
     Mutation: {
