@@ -13,8 +13,10 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  Button
 } from "./OrganizationsStyles";
 import { organizations } from "../../constants/projectConstants";
+import {Link} from "react-router-dom";
 
 const Organizations = () => (
   <Section nopadding id="organizations">
@@ -38,7 +40,9 @@ const Organizations = () => (
             </div>
             <UtilityList>
               <ExternalLinks href={p.site}>Visit</ExternalLinks>
-              <ExternalLinks href={p.donate}>Donate Now</ExternalLinks>
+              <Button>
+              <Link to="/Donation" style={{ display: 'flex', alignItems: 'center', color:"rgb(83, 152, 204)", textDecoration:"none" }}>Donate Now</Link>
+              </Button>
             </UtilityList>
             
           </BlogCard>

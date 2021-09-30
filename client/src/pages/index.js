@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
+// import Donation from "../components/Donation";
 import Footer from "../components/Footer";
 import Charitycauses from "../components/Charitycauses"
 import {
@@ -24,6 +25,7 @@ function Home() {
       <About {...homeObjOne} />
       <About {...homeObjTwo} />
       <About {...homeObjThree} />
+      {/* <Donation /> */}
   
      
     </>

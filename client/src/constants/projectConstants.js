@@ -25,6 +25,7 @@ export const organizations = [
     image: "/images/american-red-cross.jpg",
     tags: [],
     site: "https://www.redcross.org/",
+    donate:'./Donation',
     id: 2,
   },
   {
@@ -98,6 +99,7 @@ export const organizations = [
     image: "/images/greenpeace.jpg",
     tags: [],
     site: "https://www.greenpeace.org/usa/",
+    donate:'./Donation',
     id: 10,
   },
   {
@@ -109,15 +111,6 @@ export const organizations = [
     site: "https://www.sierraclub.org/",
     id: 11,
   },
-
-  // {
-  //   title: 'Tech Blog',
-  //   description: "Save information to a database. While sign in a user can make new posts which are in turn saved for future edit and deletion if one chooses to. ",
-  //   image: '/images/tech.png',
-  //   tags: ['Javacript ', 'Node.js', 'MySQL', 'Sequelize'],
-  //   source: 'https://only-tech-news.herokuapp.com',
-  //   id: 7,
-  // },
 ];
 
 export const TimeLineData = [];

@@ -111,3 +111,25 @@ export const Tag = styled.li`
   font-size: 1rem;
   list-style: none;
 `;
+export const Button = styled.button`
+  border-radius: 10px;
+  background: ${({ primary }) =>
+    primary ? "rgb(83, 152, 204)" : "rgb(254, 74, 73)"};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "14px 78px" : "12px 30px")};
+  color: ${({ dark }) => (dark ? "#010606" : "rgb(238, 248, 124)")};
+  font-size: ${({ fontBig }) => (fontBig ? "30px" : "26px")};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 3px;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    transition: all 0.4s ease-in-out;
+    background: ${({ primary }) => (primary ? "#fff" : "rgb(26,45,71)")};
+  }
+`;
