@@ -15,13 +15,19 @@ export const reducer = (state, action) => {
         case ADD_TO_FAVORITES:
             return {
                 ...state,
+                favoritesOpen: true,
                 favorites: [...state.favorites, action.favorites],
             };
         case REMOVE_FROM_FAVORITES:
+            let newState = state.favorites.filter(organization => {
+                return organization._id !== action._id;
+            });
+
             return {
                 ...state,
-                favorites: [...state.favorites, action.favorites],
-            }
+                favoritesOpen: newState.length > 0,
+                favorites: newState
+            };
         default:
             return state;
     }
