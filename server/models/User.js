@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
 
+const Favorite = require('./Favorite');
+
 const userSchema = new Schema({
     username: {
         type: String,
@@ -17,11 +19,12 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true,
-        minlength: 10
-    }
+        minlength: 6
+    },
+    favorites: [Favorite.schema]
 })
 
-// Put in middelware!
+// middelware
 userSchema.pre('save', async function (next) {
     if (this.isNew || this.isModified('password')) {
         const saltRounds = 10;
