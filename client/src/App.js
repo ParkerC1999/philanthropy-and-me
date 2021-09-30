@@ -41,24 +41,6 @@ const client = new ApolloClient({
 
 function App() {
   return (
-<<<<<<< HEAD
-    <Router>
-      <div>
-        <Header></Header>
-        <main>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/Charitycauses" component={Charitycauses} />
-            <Route exact path="/Organizations" component={Organizations} />
-            <Route exact path="/Signup" component={Signup} />
-            <Route exact path="/Donation" component={Donation}/>
-            <Route />
-          </Switch>
-        </main>
-        <Footer></Footer>
-      </div>
-    </Router>
-=======
     <ApolloProvider client={client}>
       <Router>
         <div>
@@ -78,7 +60,6 @@ function App() {
       </Router>
     </ApolloProvider>
 
->>>>>>> 7b271b8d5bd4cc5eba78decbaa5301bea1e8eefb
   );
 }
 
