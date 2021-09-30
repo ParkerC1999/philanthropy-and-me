@@ -19,6 +19,12 @@ const typeDefs = gql`
         _id: ID
         username: String
         email: String
+        favorites: [Favorite]
+    }
+
+    type Favorite {
+        _id: ID
+        organizations: [Organization]
     }
 
     type Auth {
@@ -30,16 +36,20 @@ const typeDefs = gql`
         me: User
         users: [User]
         user(username: String!): User
+        donate(organizations: [ID]!): Donate
         categories: [Category]
-        organizations: [Organization]
+        favorite(_id: ID!): Favorite
+        organizations(category: ID, name: String): [Organization]
+        organization(_id: ID!): Organization
     }
 
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
         updateUser(username: String, email: String, password: String): Auth
+        addFavorite(organizations: [ID]!): Favorite
     }
-    type Donation {
+    type Donate {
         session: ID
       }
 `;

@@ -14,7 +14,7 @@ const server = new ApolloServer({
     context: authMiddleware
 });
 
-(async function() {
+(async function () {
     await server.start()
     server.applyMiddleware({ app });
 })()
@@ -24,6 +24,14 @@ const server = new ApolloServer({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // app.use(express.static('public'));
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 
 db.once('open', () => {
