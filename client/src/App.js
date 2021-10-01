@@ -1,23 +1,20 @@
-import React from "react";
-import "./App.css";
-import Charitycauses from "./components/Charitycauses";
-import Organizations from "./components/Organizations";
-import Header from "./components/Header";
-import Donation from "./components/Donation";
-import Signup from "./components/Signup";
-import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
 } from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
 
-
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
+import "./App.css";
+import Charitycauses from "./components/Charitycauses";
+import Organizations from "./components/Organizations";
+import Header from "./components/Header";
+// import Donation from "./components/Donation";
+import Signup from "./components/Signup";
+import Footer from "./components/Footer";
 import Home from "./pages";
 
 const httpLink = createHttpLink({
