@@ -3,7 +3,7 @@ export const organizations = [
   {
     title: "CARE International",
     description:
-      "CARE is a major international humanitarian agency delivering emergency relief and long-term international development projects. Founded in 1945, CARE is nonsectarian, impartial, and non-governmental. It is one of the largest and oldest humanitarian aid organizations focused on fighting global poverty.",
+      "CARE is a major international humanitarian agency delivering emergency and poverty relief and long-term international development projects.",
     image: "/images/care.jpg",
     tags: [],
     site: "https://www.care.org/",
@@ -11,7 +11,7 @@ export const organizations = [
   },
   {
     title: 'International Rescue Committee',
-    description: "The International Rescue Committee responds to the world’s worst humanitarian crises and helps people whose lives and livelihoods are shattered by conflict and disaster to survive, recover and gain control of their future.",
+    description: "The International Rescue Committee responds crises and helps people whose lives are shattered by conflict and disaster to survive, recover and gain control of their future.",
     image: '/images/int-rescue-committee.png',
     tags: [],
     site: "https://www.rescue.org/",
@@ -29,7 +29,7 @@ export const organizations = [
   },
   {
     title: 'The World Food Programme',
-    description: "The World Food Programme is the food-assistance branch of the United Nations. It is the world's largest humanitarian organization, the largest one focused on hunger and food security, and the largest provider of school meals.",
+    description: "The World Food Programme is the world's largest humanitarian organization, the largest one focused on hunger and food security, and the largest provider of school meals.",
     image: '/images/wfp.png',
     tags: [],
     site: "https://www.wfpusa.org/",
@@ -38,7 +38,7 @@ export const organizations = [
   {
     title: "Doctors Without Borders",
     description:
-      "Médecins Sans Frontières, sometimes rendered in English as Doctors Without Borders, is an international humanitarian medical non-governmental organisation of French origin best known for its projects in conflict zones and in countries affected by endemic diseases.",
+      "Doctors Without Borders is an international humanitarian medical non-governmental organisation of French origin best known for its projects in conflict zones and countries affected by endemic diseases.",
     image: "/images/doctors-without-borders-sq-new.jpg",
     tags: [],
     site: "https://www.doctorswithoutborders.org/",
@@ -47,7 +47,7 @@ export const organizations = [
   {
     title: "Oxfam",
     description:
-      "Oxfam is a British founded confederation of 20 independent charitable organizations focusing on the alleviation of global poverty, founded in 1942 and led by Oxfam International. It is a major nonprofit group with an extensive collection of operations.",
+      "Oxfam is a British founded confederation of 20 independent charitable organizations focusing on alleviating global poverty, founded in 1942 and led by Oxfam International.",
     image: "/images/oxfam.jpg",
     tags: [],
     site: "https://www.oxfamamerica.org/",
@@ -56,7 +56,7 @@ export const organizations = [
   // Nature/Wildlife
   {
     title: 'The Nature Conservancy',
-    description: "Our mission is to conserve the lands and waters on which all life depends. To achieve this, we must boldly address the biodiversity and climate crises over the next decade.",
+    description: "The Nature Conservancy focusses on the conservation of lands and waters on which all life depends by addressing the biodiversity and climate crises over the next decade.",
     image: '/images/nature-conservancy.png',
     tags: [],
     site: "https://www.nature.org/en-us/",
@@ -80,7 +80,7 @@ export const organizations = [
     id: 8,
   },
   {
-    title: "The American Society for the Prevention of Cruelty to Animals",
+    title: "ASPCA",
     description:
       "The American Society for the Prevention of Cruelty to Animals is a non-profit organization dedicated to preventing cruelty to animals.",
     image: "/images/aspca.jpg",
@@ -91,7 +91,7 @@ export const organizations = [
   {
     title: "Greenpeace",
     description:
-      "Greenpeace is a non-governmental environmental organisation with offices in over 55 countries and an international coordinating body in Amsterdam, the Netherlands. Greenpeace was founded in 1971 by Irving Stowe and Dorothy Stowe, Canadian and US expat environmental activists.",
+      "Greenpeace is a non-governmental environmental activist organisation with offices in over 55 countries and an international coordinating body in Amsterdam, the Netherlands.",
     image: "/images/greenpeace.jpg",
     tags: [],
     site: "https://www.greenpeace.org/usa/",
@@ -101,7 +101,7 @@ export const organizations = [
   {
     title: "The Sierra Club",
     description:
-      "The Sierra Club is the most enduring and influential grassroots environmental organization in the United States. We amplify the power of our 3.8 million members and supporters to defend everyone’s right to a healthy world.",
+      "The Sierra Club is an influential grassroots environmental organization in the United States comprising 3.8 million members and supporters to defend everyone’s right to a healthy world.",
     image: "/images/sierra-club.jpg",
     tags: [],
     site: "https://www.sierraclub.org/",
