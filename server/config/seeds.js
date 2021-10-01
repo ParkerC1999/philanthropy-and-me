@@ -20,7 +20,7 @@ db.once('open', async () => {
     await Organization.insertMany([
         {
             title: 'CARE International',
-            description: 'CARE is a major international humanitarian agency delivering emergency relief and long-term international development projects. Founded in 1945, CARE is nonsectarian, impartial, and non-governmental. It is one of the largest and oldest humanitarian aid organizations focused on fighting global poverty.',
+            description: 'CARE is a major international humanitarian agency delivering emergency relief and long-term international development projects. It is one of the largest and oldest humanitarian aid organizations focused on fighting global poverty.',
             image: 'care.jpg',
             category: categories[0].id,
             site: 'https://www.care.org/'
