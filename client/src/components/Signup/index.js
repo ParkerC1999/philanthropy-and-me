@@ -34,9 +34,9 @@ function Signup(props) {
   return (
     <SignupContainer className="container my-1">
       <Link to="/login">Login</Link>
-<Fade right>
-<H2>Change the World</H2>
-</Fade>
+      <Fade right>
+        <H2>Change the World</H2>
+      </Fade>
       <Form onSubmit={handleFormSubmit}>
         <Div className="flex-row space-between my-2">
           <label htmlFor="username">Username:</label>
