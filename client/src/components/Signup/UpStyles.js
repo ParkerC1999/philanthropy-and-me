@@ -20,7 +20,7 @@ export const H2 = styled.h1`
   font-size: 10rem;
   align-items: center;
   text-align:center;
-  padding-top:50px;
+  padding-top:150px;
 `;
 export const Input = styled.input`
 width:20%;
@@ -38,10 +38,7 @@ background-color: var(--third-color);
     background: var(--fourth-color);
 }
 `
-export const Img = styled.img`
-margin-top: 100px;
-margin-left: 600px;
-`
+
 export const Button = styled.button`
 border-radius: 10px;
 background: ${({primary}) => (primary ? 'rgb(83, 152, 204)' : 'rgb(254, 74, 73)')

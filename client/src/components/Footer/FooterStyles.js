@@ -100,6 +100,7 @@ export const SocialLogo = styled(Link)`
   &:hover {
     color: var(--fourth-color);
     transition: 0.5s ease-out;
+  }
 `;
 
 export const WebsiteRights = styled.div`
@@ -122,4 +123,5 @@ export const SocialIconLink = styled.a`
   &:hover {
     color: var(--fourth-color);
     transition: 0.5s ease-out;
+  }
 `;
