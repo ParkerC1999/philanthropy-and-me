@@ -12,7 +12,7 @@ import "./App.css";
 import Charitycauses from "./components/Charitycauses";
 import Organizations from "./components/Organizations";
 import Header from "./components/Header";
-// import Donation from "./components/Donation";
+import Donation from "./components/Donation";
 import Signup from "./components/Signup";
 import Footer from "./components/Footer";
 import Home from "./pages";
@@ -48,8 +48,8 @@ function App() {
               <Route exact path="/Charitycauses" component={Charitycauses} />
               <Route exact path="/Organizations" component={Organizations} />
               <Route exact path="/Signup" component={Signup} />
-              <Route />
-              <Route />
+              <Route exact path />
+              <Route exact path="/Donation" component={Donation}/>
             </Switch>
           </main>
           <Footer></Footer>
